@@ -16,12 +16,12 @@ exclude-newer = "0001-01-01T00:00:00Z" # This has no effect and is included for 
 exclude-newer-span = "P3D"
 
 [options.exclude-newer-package]
+arize-phoenix-client = "2099-12-31T00:00:00Z"
+arize-phoenix-evals = "2099-12-31T00:00:00Z"
 arize-phoenix-otel = "2099-12-31T00:00:00Z"
+arize-phoenix-sqlean = "2099-12-31T00:00:00Z"
 openinference-instrumentation = "2099-12-31T00:00:00Z"
 openinference-semantic-conventions = "2099-12-31T00:00:00Z"
-arize-phoenix-evals = "2099-12-31T00:00:00Z"
-arize-phoenix-client = "2099-12-31T00:00:00Z"
-arize-phoenix-sqlean = "2099-12-31T00:00:00Z"
 
 [manifest]
 members = [
@@ -901,7 +901,7 @@ dev = [
 
 [[package]]
 name = "arize-phoenix-client"
-version = "3.5.0"
+version = "3.6.0"
 source = { editable = "packages/phoenix-client" }
 dependencies = [
     { name = "httpx" },
